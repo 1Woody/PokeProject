@@ -15,15 +15,3 @@ with open(r"pokemons.json") as f:
 
 result = collection.bulk_write(requesting)
 client.close()
-
-"""
-
-with open("pokemons.json") as f:
-    data = json.loads(f.read())
-    for jsonObj in data:
-        requesting.append(InsertOne(jsonObj))
-
-result = collection.bulk_write(requesting)
-client.close()
-
-"""
