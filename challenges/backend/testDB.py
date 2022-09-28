@@ -8,6 +8,7 @@ db = client["PokeDex"]
 collection = db["test"]
 print("Connection Successful")
 
+# test collection
 x = collection.find_one()
 print(x)
 
